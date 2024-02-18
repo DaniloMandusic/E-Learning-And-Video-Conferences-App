@@ -1,0 +1,109 @@
+[{
+  "_id": {
+    "$oid": "659d8ff38160843fe523aca1"
+  },
+  "name": "matematika",
+  "status": "approved"
+},
+{
+  "_id": {
+    "$oid": "659d8ff38160843fe523aca2"
+  },
+  "name": "fizika",
+  "status": "approved"
+},
+{
+  "_id": {
+    "$oid": "659d8ff38160843fe523aca3"
+  },
+  "name": "hemija",
+  "status": "approved"
+},
+{
+  "_id": {
+    "$oid": "65b574f75757275fbf65c80a"
+  },
+  "name": "astronomija",
+  "status": "not approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b576cbb2cfb8cf6372d5cd"
+  },
+  "name": "astrofizika",
+  "status": "approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d1fbf9ffe00df37387e732"
+  },
+  "name": "informatika",
+  "status": "approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d1fbf9ffe00df37387e733"
+  },
+  "name": "programiranje",
+  "status": "approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d1fbf9ffe00df37387e734"
+  },
+  "name": "srpski",
+  "status": "approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d1fbf9ffe00df37387e735"
+  },
+  "name": "engleski",
+  "status": "approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d1fbf9ffe00df37387e736"
+  },
+  "name": "nemacki",
+  "status": "approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d1fbf9ffe00df37387e737"
+  },
+  "name": "italijanski",
+  "status": "approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d1fbf9ffe00df37387e738"
+  },
+  "name": "francuski",
+  "status": "approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d1fbf9ffe00df37387e739"
+  },
+  "name": "biologija",
+  "status": "approved",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d1fbf9ffe00df37387e73a"
+  },
+  "name": "geografija",
+  "status": "approved",
+  "__v": 0
+}]

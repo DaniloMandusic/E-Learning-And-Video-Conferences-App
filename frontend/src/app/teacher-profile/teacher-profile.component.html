@@ -1,0 +1,110 @@
+
+<style>
+    .default-image {
+      background-image: url('assets/Screenshot 2024-01-07 143614.jpg');
+      width: 100px; 
+      height: 100px; 
+      background-size: cover; 
+      
+    }
+  </style>
+
+<div class="container">
+
+<a routerLink="/teacherProfile">Profile   </a>
+<a routerLink="/teacherStudentsList">StudentList   </a>
+<a routerLink="/teacherTutions">Tutions   </a>
+<a routerLink="">Logout   </a>
+<br>
+<br>
+
+<br>
+<form #registrationForm="ngForm" enctype="multipart/form-data" (ngSubmit)="onSubmit(registrationForm)">
+<!-- Username -->
+<div class="form-group">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" ngModel required [(ngModel)]="currentUser.username">
+</div>
+
+<!-- Security Question -->
+<div class="form-group">
+    <label for="securityQuestion">Security Question:</label>
+    <input type="text" id="securityQuestion" name="securityQuestion" ngModel required [(ngModel)]="currentUser.securityQuestion">
+</div>
+
+<!-- Security Answer -->
+<div class="form-group">
+    <label for="securityAnswer">Security Answer:</label>
+    <input type="text" id="securityAnswer" name="securityAnswer" ngModel required [(ngModel)]="currentUser.securityAnswer">
+    </div>
+
+<!-- Name -->
+<div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" ngModel required [(ngModel)]="currentUser.name">
+</div>
+
+<!-- Surname -->
+<div class="form-group">
+    <label for="surname">Surname:</label>
+    <input type="text" id="surname" name="surname" ngModel required [(ngModel)]="currentUser.surname">
+</div>
+
+<!-- Gender -->
+<div class="form-group">
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" ngModel required [(ngModel)]="currentUser.gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    </select>
+</div>
+
+<!-- Address -->
+<div class="form-group">
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" ngModel required [(ngModel)]="currentUser.address">
+</div>
+
+<!-- Phone Number -->
+<div class="form-group">
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" ngModel required [(ngModel)]="currentUser.phoneNumber">
+</div>
+
+<!-- Email -->
+<div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" ngModel required [(ngModel)]="currentUser.email">
+</div>
+
+<div class="form-group">
+    <label for="classes">Classes:</label>
+    <input type="classes" id="classes" name="classes" ngModel required [(ngModel)]="currentUser.classes">
+</div>
+
+<div class="form-group">
+    <label for="teachingGroup">Teaching group:</label>
+    <select id="teachingGroup" name="teachingGroup" ngModel [(ngModel)]="currentUser.teachingGroup">
+        <option value="elementary14">Elementary 1-4</option>
+        <option value="elementary58">Elementary 5-8</option>
+        <option value="middlehigh">Middle/High</option>
+    </select>
+    </div>
+
+
+<div class="form-group">
+    <label for="picture">Profile Picture:</label>
+    <input type="file" id="picture" name="picture" (change)="onFileSelected($event)">
+    
+    <img *ngIf="selectedFile" [src]="selectedFileUrl" class="default-image" width="300" height="300">
+</div>
+
+<button type="submit">Change profile</button>
+
+
+<div *ngIf="registrationMessage" class="registration-message">
+    {{ registrationMessage }}
+</div>
+</form>
+
+</div>

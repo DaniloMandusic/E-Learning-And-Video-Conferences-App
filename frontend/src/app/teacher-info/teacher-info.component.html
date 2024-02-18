@@ -1,0 +1,100 @@
+<style>
+    .default-image {
+      background-image: url('assets/Screenshot 2024-01-07 143614.jpg');
+      width: 100px; 
+      height: 100px; 
+      background-size: cover; 
+      
+    }
+</style>
+
+<div class="container">
+
+<br>
+
+    
+      <label for="username">name: {{currentUser.name}}</label>
+      <br>
+     
+  
+    <!-- Name -->
+  
+      <label for="name">surname: {{currentUser.surname}}</label>
+   
+      <br>
+  
+    <!-- Surname -->
+   
+      <label for="surname">phone: {{currentUser.phoneNumber}}</label>
+   
+    
+  
+      <br>
+  
+    <!-- Address -->
+    
+      <label for="address">email: {{currentUser.email}}</label>
+      
+      <br>
+  
+    <!-- Phone Number -->
+    <br>
+    
+      <table>
+        <tr>
+            <th>
+                Classes
+            </th>
+        </tr>
+        <tr *ngFor="let cl of classes">
+            <td>{{ cl }}</td>
+        
+          </tr>
+      </table>
+
+      <br>
+
+      <img [src]="currentUser.image" class="default-image">
+
+      <br>
+      ---------------------------------------
+      <br>
+
+      <form (ngSubmit)="submitForm()">
+        <label for="class">Select Class:</label>
+        <select id="class" name="class" [(ngModel)]="selectedClass" [disabled]="isDropdownDisabled">
+          <option *ngFor="let class of classes" [value]="class" >{{ class }}</option>
+        </select><br><br>
+        
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" [(ngModel)]="selectedDate"><br><br>
+      
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time" [(ngModel)]="selectedTime"><br><br>
+      
+        <label for="additionalInfo">Additional Info:</label>
+        <input type="text" id="additionalInfo" name="additionalInfo" [(ngModel)]="additionalInfo"><br><br>
+      
+        <label>
+          <input type="checkbox" [(ngModel)]="wantTwoClasses" name="wantTwoClasses"> I want two classes
+        </label><br><br>
+      
+        <button type="submit">Submit</button>
+
+        <div *ngIf="registrationMessage" class="registration-message">
+            {{ registrationMessage }}
+        </div>
+      </form>
+
+      <br>
+
+
+      </div>
+      
+    
+
+    
+    
+
+
+

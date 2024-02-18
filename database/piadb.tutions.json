@@ -1,0 +1,165 @@
+[{
+  "_id": {
+    "$oid": "65b3df18aa91b1c13ab6bf9e"
+  },
+  "student": "danilo7",
+  "professor": "danilo432",
+  "selectedClass": "matematika",
+  "date": "2023-01-26",
+  "time": "11:11",
+  "additionalInfo": "info",
+  "wantTwoClasses": "true",
+  "isConfirmed": "true",
+  "isDone": "true",
+  "comment": "good",
+  "__v": 0,
+  "declineComment": "",
+  "score": "1"
+},
+{
+  "_id": {
+    "$oid": "65b3df1eaa91b1c13ab6bfa0"
+  },
+  "student": "danilo7",
+  "professor": "danilo432",
+  "selectedClass": "matematika",
+  "date": "2024-01-26",
+  "time": "11:20",
+  "additionalInfo": "info",
+  "wantTwoClasses": "true",
+  "isConfirmed": "declined",
+  "isDone": "true",
+  "comment": "good",
+  "__v": 0,
+  "declineComment": "booked",
+  "isScored": "true",
+  "score": "2"
+},
+{
+  "_id": {
+    "$oid": "65b3df1eaa91b1c13ab6bfa2"
+  },
+  "student": "danilo7",
+  "professor": "danilo432",
+  "selectedClass": "matematika",
+  "date": "2023-01-26",
+  "time": "11:11",
+  "additionalInfo": "info",
+  "wantTwoClasses": "true",
+  "isConfirmed": "false",
+  "isDone": "false",
+  "comment": "good",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b429bbaa91b1c13ab6c000"
+  },
+  "student": "danilo7",
+  "professor": "danilo432",
+  "selectedClass": "matematika",
+  "date": "2023-01-27",
+  "time": "11:11",
+  "additionalInfo": "info",
+  "wantTwoClasses": "false",
+  "isConfirmed": "true",
+  "isDone": "false",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b429c4aa91b1c13ab6c002"
+  },
+  "student": "danilo7",
+  "professor": "danilo432",
+  "selectedClass": "fizika",
+  "date": "2023-01-28",
+  "time": "11:11",
+  "additionalInfo": "info",
+  "wantTwoClasses": "true",
+  "isConfirmed": "true",
+  "isDone": "false",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b429d1aa91b1c13ab6c004"
+  },
+  "student": "danilo7",
+  "professor": "danilo432",
+  "selectedClass": "matematika",
+  "date": "2023-01-29",
+  "time": "11:11",
+  "additionalInfo": "info",
+  "wantTwoClasses": "false",
+  "isConfirmed": "true",
+  "isDone": "false",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b42b8baa91b1c13ab6c00b"
+  },
+  "student": "danilo7",
+  "professor": "danilo432",
+  "selectedClass": "matematika",
+  "date": "2023-02-09",
+  "time": "12:03",
+  "additionalInfo": "info",
+  "wantTwoClasses": "true",
+  "isConfirmed": "true",
+  "isDone": "false",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b42bbeaa91b1c13ab6c00f"
+  },
+  "student": "danilo7",
+  "professor": "danilo432",
+  "selectedClass": "matematika",
+  "date": "2023-01-28",
+  "time": "12:03",
+  "additionalInfo": "info",
+  "wantTwoClasses": "true",
+  "isConfirmed": "true",
+  "isDone": "false",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b42bc0aa91b1c13ab6c011"
+  },
+  "student": "danilo7",
+  "professor": "danilo432",
+  "selectedClass": "matematika",
+  "date": "2023-01-28",
+  "time": "12:03",
+  "additionalInfo": "info",
+  "wantTwoClasses": "true",
+  "isConfirmed": "true",
+  "isDone": "false",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b42c16aa91b1c13ab6c015"
+  },
+  "student": "danilo7",
+  "professor": "danilo432",
+  "selectedClass": "matematika",
+  "date": "2023-01-28",
+  "time": "12:03",
+  "additionalInfo": "info",
+  "wantTwoClasses": "true",
+  "isConfirmed": "true",
+  "isDone": "false",
+  "comment": "",
+  "__v": 0
+}]

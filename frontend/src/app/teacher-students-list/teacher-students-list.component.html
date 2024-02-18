@@ -1,0 +1,68 @@
+<div class="container">
+
+<a routerLink="/teacherProfile">Profile   </a>
+<a routerLink="/teacherStudentsList">StudentList   </a>
+<a routerLink="/teacherTutions">Tutions   </a>
+<a routerLink="">Logout   </a>
+<br>
+<br>
+
+<table>
+<thead>
+    <tr>
+    <th>Username</th>
+    <th>Grade</th>
+    <th>School</th>
+    <th>Options</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let student of teachersStudents">
+    <td>{{ student.username }}</td>
+    <td>{{ student.grade }}</td>
+    <td>{{ student.schoolType }}</td>
+    <td><button (click)="seeTutions(student)">See tutions</button></td>
+    </tr>
+</tbody>
+</table>
+
+<br>
+<br>
+
+<div *ngIf="currentTutions.length > 0">
+    <table>
+    <thead>
+        <tr>
+        <th>Class</th>
+        <th>Date</th>
+        <th>Score</th>
+        <th>Comment</th>
+        <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let tution of currentTutions">
+        <td>{{ tution.selectedClass }}</td>
+        <td>{{ tution.date }}</td>
+
+        <td *ngIf="!tution.isScored">
+            <select id="score" name="score" ngModel required [(ngModel)]="tution.score">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </td>
+        <td *ngIf="!tution.isScored"><input type="text" [(ngModel)]="tution.comment"></td>
+        <td *ngIf="!tution.isScored"><button (click)="setScore(tution)">Set score</button></td>
+
+        <td *ngIf="tution.isScored">{{ tution.score }}</td>
+        <td *ngIf="tution.isScored">{{ tution.comment }}</td>
+
+        </tr>
+    </tbody>
+    </table>
+</div>
+
+</div>

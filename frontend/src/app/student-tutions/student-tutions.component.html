@@ -1,0 +1,54 @@
+<div class="container">
+
+<a routerLink="/studentProfile">Profile   </a>
+<a routerLink="/studentTeachersView">Teachers   </a>
+<a routerLink="/studentTutions">Tutions   </a>
+<a routerLink="">Logout   </a>
+<br>
+<br>
+
+<table>
+<thead>
+    <tr>
+    <th>Date</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Professor</th>
+    <th>Class</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let tution of comingTutions">
+    <td>{{ tution.date }}</td>
+    <td>{{ tution.time }}</td>
+    <td>{{ tution.endTime }}</td>
+    <td>{{ tution.professor }}</td>
+    <td>{{ tution.selectedClass }}</td>
+    </tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+    <th>Date</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Professor</th>
+    <th>Class</th>
+    <th>Comment</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let tution of passedTutions">
+    <td>{{ tution.date }}</td>
+    <td>{{ tution.time }}</td>
+    <td>{{ tution.endTime }}</td>
+    <td>{{ tution.professor }}</td>
+    <td>{{ tution.selectedClass }}</td>
+    <td>{{ tution.comment }}</td>
+    </tr>
+</tbody>
+</table>
+  
+</div>

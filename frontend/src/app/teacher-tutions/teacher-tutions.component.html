@@ -1,0 +1,65 @@
+<div class="container">
+
+<a routerLink="/teacherProfile">Profile   </a>
+<a routerLink="/teacherStudentsList">StudentList   </a>
+<a routerLink="/teacherTutions">Tutions   </a>
+<a routerLink="">Logout   </a>
+<br>
+<br>
+
+<table>
+<thead>
+    <tr>
+    <th>Date</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Student</th>
+    <th>Class</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let tution of confirmedTutions">
+    <td>{{ tution.date }}</td>
+    <td>{{ tution.time }}</td>
+    <td>{{ tution.endTime }}</td>
+    <td>{{ tution.student }}</td>
+    <td>{{ tution.selectedClass }}</td>
+    </tr>
+</tbody>
+</table>
+
+<br>
+<br>
+
+Requested tutions:
+
+<table>
+<thead>
+    <tr>
+    <th>Date</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Student</th>
+    <th>Class</th>
+    <th>Additional info</th>
+    <th>Average score</th>
+    <th>Action</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let tution of requestedTutions">
+    <td>{{ tution.date }}</td>
+    <td>{{ tution.time }}</td>
+    <td>{{ tution.endTime }}</td>
+    <td>{{ tution.student }}</td>
+    <td>{{ tution.selectedClass }}</td>
+    <td>{{ tution.additionalInfo }}</td>
+    <td> not implemented </td>
+    <td><button (click)="accept(tution)">Accept</button>
+    <td><button (click)="decline(tution)">Decline</button>
+    <td><input type="text" [(ngModel)]="tution.declineComment"></td>
+    </tr>
+</tbody>
+</table>
+
+</div>
